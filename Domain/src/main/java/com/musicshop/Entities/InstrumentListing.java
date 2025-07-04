@@ -1,5 +1,7 @@
 package com.musicshop.Entities;
 
+import com.musicshop.ValueObjects.Money;
+
 import java.util.Date;
 import java.util.List;
 
