@@ -1,4 +1,4 @@
-package com.musicshop.musicshop;
+package com.musicshop.Domain.musicshop;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

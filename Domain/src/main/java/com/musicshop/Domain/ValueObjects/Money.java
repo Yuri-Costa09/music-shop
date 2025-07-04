@@ -1,4 +1,6 @@
-package com.musicshop.ValueObjects;
+package com.musicshop.Domain.ValueObjects;
+
+import com.musicshop.Domain.Exceptions.DomainException;
 
 import java.math.BigDecimal;
 
@@ -8,10 +10,10 @@ public class Money {
 
     Money(BigDecimal value) {
         if (value == null) {
-            throw new IllegalArgumentException("amount cannot be null");
+            throw new DomainException("amount cannot be null");
         }
         if (value.compareTo(BigDecimal.ZERO) <= 0) {
-            throw new IllegalArgumentException("amount cannot be negative or zero");
+            throw new DomainException("amount cannot be negative or zero");
         }
 
         this.value = value;

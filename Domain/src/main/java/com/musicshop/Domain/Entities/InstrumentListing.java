@@ -1,18 +1,21 @@
-package com.musicshop.Entities;
+package com.musicshop.Domain.Entities;
 
-import com.musicshop.ValueObjects.Money;
+import com.musicshop.Domain.ValueObjects.Money;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
 public class InstrumentListing {
-    private Integer id;
+    private int id;
     private String title;
     private String description;
-    private Money price; // Value Object
+    private Money price;
     private List<String> instrumentPhotosUrl;
     private List<Tag> tags;
-    private Date createDate;
+    private LocalDateTime createDate;
 
     private User owner;
+
+
 }

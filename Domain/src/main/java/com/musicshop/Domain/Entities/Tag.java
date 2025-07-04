@@ -1,7 +1,7 @@
-package com.musicshop.Entities;
+package com.musicshop.Domain.Entities;
 
 public class Tag {
-    private Integer id;
+    private int id;
     private String tagName;
 
     private InstrumentListing instrument;

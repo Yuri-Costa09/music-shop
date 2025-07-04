@@ -1,18 +1,19 @@
-package com.musicshop.Entities;
+package com.musicshop.Domain.Entities;
 
-import com.musicshop.Enums.OrderStatus;
-import com.musicshop.ValueObjects.Money;
+import com.musicshop.Domain.Enums.OrderStatus;
+import com.musicshop.Domain.ValueObjects.Money;
 
+import java.time.LocalDateTime;
 import java.util.Currency;
 import java.util.Date;
 
 public class Order {
-    private Integer id;
+    private int id;
     private OrderStatus status;
     private Money amount;
     private Currency currency;
 
     private User buyerId;
     private Transaction transaction;
-    private Date created_at;
+    private LocalDateTime created_at;
 }
