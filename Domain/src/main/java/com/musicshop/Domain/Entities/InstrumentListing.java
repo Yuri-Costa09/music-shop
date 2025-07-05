@@ -12,6 +12,7 @@ public class InstrumentListing {
     private String description;
     private Money price;
     private LocalDateTime createdAt;
+    private boolean sold;
 
     private List<String> instrumentPhotosUrl = new ArrayList<>();
     private List<Tag> tags = new ArrayList<>();
@@ -22,13 +23,15 @@ public class InstrumentListing {
                              User owner,
                              Money price,
                              String description,
-                             String title) {
+                             String title,
+                             boolean sold) {
 
         this.createdAt = LocalDateTime.now();
         this.owner = owner;
         this.price = price;
         this.description = description;
         this.title = title;
+        this.sold = false;
     }
 
     protected InstrumentListing() { }
