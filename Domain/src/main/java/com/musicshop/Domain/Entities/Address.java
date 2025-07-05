@@ -20,4 +20,36 @@ public class Address {
     }
 
     protected Address() { }
+
+    public String getNeighborhood() {
+        return neighborhood;
+    }
+
+    public void setNeighborhood(String neighborhood) {
+        this.neighborhood = neighborhood;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public UF getUF() {
+        return UF;
+    }
+
+    public void setUF(UF UF) {
+        this.UF = UF;
+    }
 }

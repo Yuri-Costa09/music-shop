@@ -22,4 +22,36 @@ public class Rating {
     }
 
     protected Rating() { }
+
+    public RatingNumber getRatingNumber() {
+        return ratingNumber;
+    }
+
+    public void setRatingNumber(RatingNumber ratingNumber) {
+        this.ratingNumber = ratingNumber;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public User getTargetUser() {
+        return targetUser;
+    }
+
+    public void setTargetUser(User targetUser) {
+        this.targetUser = targetUser;
+    }
 }

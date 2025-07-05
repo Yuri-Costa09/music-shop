@@ -15,4 +15,20 @@ public class Tag {
     }
 
     protected Tag() { }
+
+    public String getTagName() {
+        return tagName;
+    }
+
+    public void setTagName(String tagName) {
+        this.tagName = tagName;
+    }
+
+    public List<InstrumentListing> getInstruments() {
+        return instruments;
+    }
+
+    public void setInstruments(List<InstrumentListing> instruments) {
+        this.instruments = instruments;
+    }
 }
