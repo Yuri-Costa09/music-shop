@@ -9,4 +9,17 @@ public class Rating {
 
     private User user;
     private User targetUser;
+
+    public Rating(RatingNumber ratingNumber,
+                  String content,
+                  User user,
+                  User targetUser) {
+
+        this.ratingNumber = ratingNumber;
+        this.content = content;
+        this.user = user;
+        this.targetUser = targetUser;
+    }
+
+    protected Rating() { }
 }

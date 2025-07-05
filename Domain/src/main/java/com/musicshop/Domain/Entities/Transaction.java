@@ -11,7 +11,16 @@ public class Transaction {
 
     private String stripe_payment_intent_id;
 
-    private PaymentStatus status;
+    private PaymentStatus status = PaymentStatus.PENDING;
 
     private LocalDateTime paidAt;
+
+    public Transaction(Order order,
+                       String stripe_payment_intent_id) {
+        this.order = order;
+        this.stripe_payment_intent_id = stripe_payment_intent_id;
+        this.paidAt = LocalDateTime.now();
+    }
+
+    protected Transaction() { }
 }
