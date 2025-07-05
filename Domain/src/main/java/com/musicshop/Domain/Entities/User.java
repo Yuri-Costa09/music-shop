@@ -20,6 +20,7 @@ public class User {
     private Role role;
 
     private List<InstrumentListing> instrumentListings = new ArrayList<>();
+    private List<InstrumentListing> favorites = new ArrayList<>();
     private List<Rating> ratings = new ArrayList<>();
     private List<Order> orders = new ArrayList<>();
 
@@ -114,6 +115,14 @@ public class User {
 
     public void setInstrumentListings(List<InstrumentListing> instrumentListings) {
         this.instrumentListings = instrumentListings;
+    }
+
+    public List<InstrumentListing> getFavorites() {
+        return favorites;
+    }
+
+    public void setFavorites(List<InstrumentListing> favorites) {
+        this.favorites = favorites;
     }
 
     public List<Rating> getRatings() {
